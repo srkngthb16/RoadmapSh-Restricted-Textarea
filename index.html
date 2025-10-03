@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Restricted Textarea</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="page">
+			<h1 class="title">Write your Message</h1>
+
+			<div class="textarea-wrap">
+				<label for="message" class="sr-only">Message (max 250 characters)</label>
+				<textarea id="message" placeholder="Start typing ..." aria-describedby="charCount" rows="6"></textarea>
+				<div id="charCount" class="char-count" aria-live="polite">0 / 250</div>
+			</div>
+
+			<p class="notes">Try typing or pasting text. When you reach the 250-character limit the border will turn red and no more characters will be accepted.</p>
+
+		</main>
+
+		<script src="scripts.js"></script>
+	</body>
+</html>
